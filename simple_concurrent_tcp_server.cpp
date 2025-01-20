@@ -1,3 +1,21 @@
+/*
+Exercise: Building a Simple Concurrent TCP Server
+
+Objective: Create a simple concurrent TCP server using C/C++ that listens on a specified port and handles incoming client connections using worker threads.
+
+Requirements:
+
+1. Implement a TCP server that listens on a specific port (e.g., Port 8080).
+2. The server should be able to handle multiple client connections concurrently using worker threads. Each client connection should be processed in its own thread.
+3. When a client connects, the server should accept the connection, and the processing for that client should be done asynchronously in a separate worker thread.
+4. In the worker thread, simulate some processing (e.g., calculating the factorial of a number, generating random data, or any other computationally intensive task).
+5. The server should continue listening for new client connections while serving existing clients concurrently.
+6. Implement a mechanism to gracefully shut down the server when required (e.g., by pressing a specific key combination or sending a termination signal).
+
+*/
+
+
+
 #include <iostream>  // For standard input and output operations (e.g., cout, cerr)
 #include <thread>    // For threading support (e.g., std::thread)
 #include <cstring>   // For C-style string manipulation functions (e.g., strlen)
